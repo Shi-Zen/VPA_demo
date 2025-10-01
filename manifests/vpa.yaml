@@ -9,7 +9,7 @@ spec:
     kind:       Deployment
     name:       nginx-deployment
   updatePolicy:
-    updateMode: "Initial"
+    updateMode: "Off"
   resourcePolicy:
     containerPolicies:
     - containerName: nginx
@@ -18,4 +18,4 @@ spec:
         memory: "64Mi"
       maxAllowed:
         cpu: "500m"
-        memory: "512Mi"
+        memory: "512'Mi"
